@@ -54,7 +54,8 @@ int main()
 
     cout << endl;
 
-    Array arr2 = arr1;
+    // Default compiler-defined  shallow-copy copy constructor is invoked
+    Array arr2(arr1);
 
     arr2.printData();
 
