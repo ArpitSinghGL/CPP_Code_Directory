@@ -24,7 +24,10 @@ int main() {
     std::thread thread1(cpu_waster);
     std::thread thread2(cpu_waster);
 
-    while(true) { // keep the main thread alive "forever"
+    while(true) 
+    { // keep the main thread alive "forever"
         std::this_thread::sleep_for(std::chrono::seconds(10));
     }
+
+    return 0;
 }
